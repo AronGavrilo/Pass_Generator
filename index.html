@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password_Generate</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./js/main.js" defer type="module"></script>
+</head>
+<body>
+    
+    <div id="root">
+        <div id="app">
+            <div class="app_password">
+                <span id="generated_password">X  X  X  X  X</span>
+            </div>
+
+            <div class="app_password_status">
+                 Generated Password <div id="status" class="weak" class="medium" class="strong">Strong</div> 
+            </div>
+
+            <div class="app_password_lenght">
+            Password  lenght <input min="1" max="20" type="range" id="pass_range"><div id="char_len">10</div>
+            </div>
+        <div class="app_options">
+            <div class="option">
+                
+                
+                <label for="symbols">Include Uppercase Letters <input type="checkbox" id="uppercase" ></label>
+                <label for="uppercase">Include Uppercase Letters <input type="checkbox" id="symbols" ></label>
+                <label for="numbers">Include numbers <input type="checkbox" id="numbers"></label>
+            </div>
+        </div> 
+        </div>
+
+        
+
+    </div>
+    
+</body>
+</html>

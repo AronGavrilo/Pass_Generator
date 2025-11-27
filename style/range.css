@@ -1,0 +1,33 @@
+input[type="range"] {
+
+  -webkit-appearance: none;
+
+  width: 240px;
+  height: 2px;
+  background: #e0f7fa; /* светлая линия — cyan */
+  border-radius: 4px;
+  outline: none;
+
+}
+/* Трек */
+/* Сам ползунок (thumb) */
+input[type="range"]::-webkit-slider-thumb {
+
+  -webkit-appearance: none;
+
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: rgb(0, 255, 0);   /* насыщенный cyan */
+  border: none;
+  box-shadow: 0 0 5px rgb(7, 221, 7);
+  cursor: pointer;
+  transition: background 0.3s;
+  
+}
+
+/* Для чистоты минимализма убираем outline */
+input[type="range"]:focus {
+  outline: none;
+  box-shadow: none;
+}
